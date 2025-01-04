@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Strength Finder</title>
+    <link rel="stylesheet" href="check_course.css">
+    
+</head>
+<body>
+
+    
+    
+    <div class="container">
+        <h1>Student Strength Finder</h1>
+        <div class="tabs">
+            <button class="tab-button active" data-tab="art">Art</button>
+            <button class="tab-button" data-tab="science">Science</button>
+        </div>
+        <div class="tab-content">
+            <div id="art" class="tab-pane active">
+                <h2>Art Subjects</h2>
+                <form id="art-form">
+                    <label for="art-score">Enter your Art score (0-100):</label>
+                    <input type="number" id="art-score" name="art-score" min="0" max="100" required>
+                    <button type="submit">Submit</button>
+                </form>
+                <div id="art-result" class="result"></div>
+            </div>
+            <div id="science" class="tab-pane">
+                <h2>Science Subjects</h2>
+                <form id="science-form">
+                    <label for="science-score">Enter your Science score (0-100):</label>
+                    <input type="number" id="science-score" name="science-score" min="0" max="100" required>
+                    <button type="submit">Submit</button>
+                </form>
+                <div id="science-result" class="result"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

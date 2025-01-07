@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Spicy+Rice&display=swap" rel="stylesheet">
+
     <style>
         /* Reset and base styles */
         * {
@@ -24,7 +25,6 @@
         /* Container */
         .container {
             width: 90%;
-            max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
@@ -36,7 +36,7 @@
             position: fixed;
             width: 100%;
             z-index: 1000;
-            padding: 20px;
+            padding: 20px 0;
         }
 
         nav {
@@ -47,10 +47,17 @@
         }
 
         .logo {
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             font-weight: bold;
             color: #3498db;
             font-family: "Spicy Rice", serif;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img{
+            width: 70px;
         }
 
         .nav-links {
@@ -181,13 +188,27 @@
             .feature-grid {
                 grid-template-columns: 1fr;
             }
+
+            .logo {
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: #3498db;
+                font-family: "Spicy Rice", serif;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
         }
     </style>
+
 </head>
 <body>
     <header>
         <nav class="container">
-            <div class="logo">Career Compass</div>
+            <div class="logo">
+                <img src="cap.png" alt="">
+                <p>CAREER COMPASS</p>
+            </div>
             <div class="nav-links">
                 <a href="/check_course.html">Check Courses</a>
                 <a href="#about">About</a>

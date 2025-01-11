@@ -8,38 +8,111 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
-    
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Spicy+Rice&display=swap" rel="stylesheet">
+
+    <style>
+                /* Header */
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            padding: 5px 0;
+        }
+
+                /* Container */
+        .containera {
+            width: 90%;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #3498db;
+            font-family: "Spicy Rice", serif;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img{
+            width: 70px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #3498db;
+        }
+    </style>
 </head>
 <body>
+    
+    <div>
+        <header>
+            <nav class="containera">
+                <a class="logo" href="index.html">
+                    <img src="cap.png" alt="">
+                    <p>CAREER COMPASS</p>
+                </a>
+                <div class="nav-links">
+                    <a href="/index.html">Home</a>
+                    <a href="/check_course.html">Check Courses</a>
+                    <a href="/contact.html">Contact</a>
+                </div>
+            </nav>
+        </header>
 
-    
-    
-    <div class="container">
-        <h1>Student Strength Finder</h1>
-        <div class="tabs">
-            <button class="tab-button active" data-tab="art">Art</button>
-            <button class="tab-button" data-tab="science">Science</button>
-        </div>
-        <div class="tab-content">
-            <div id="art" class="tab-pane active">
-                <h2>Art Subjects</h2>
-                <form id="art-form">
-                    <label for="art-score">Enter your Art score (0-100):</label>
-                    <input type="number" id="art-score" name="art-score" min="0" max="100" required>
-                    <button type="submit">Submit</button>
-                </form>
-                <div id="art-result" class="result"></div>
+        <div class="newCon">
+            <div class="container">
+                <h1>Student Strength Finder</h1>
+                <div class="tabs">
+                    <button class="tab-button active" data-tab="art">Art</button>
+                    <button class="tab-button" data-tab="science">Science</button>
+                </div>
+                <div class="tab-content">
+                    <div id="art" class="tab-pane active">
+                        <h2>Art Subjects</h2>
+                        <form id="art-form">
+                            <label for="art-score">Enter your Art score (0-100):</label>
+                            <input type="number" id="art-score" name="art-score" min="0" max="100" required>
+                            <button type="submit">Submit</button>
+                        </form>
+                        <div id="art-result" class="result"></div>
+                    </div>
+                    <div id="science" class="tab-pane">
+                        <h2>Science Subjects</h2>
+                        <form id="science-form">
+                            <label for="science-score">Enter your Science score (0-100):</label>
+                            <input type="number" id="science-score" name="science-score" min="0" max="100" required>
+                            <button type="submit">Submit</button>
+                        </form>
+                        <div id="science-result" class="result"></div>
+                    </div>
+                </div>
             </div>
-            <div id="science" class="tab-pane">
-                <h2>Science Subjects</h2>
-                <form id="science-form">
-                    <label for="science-score">Enter your Science score (0-100):</label>
-                    <input type="number" id="science-score" name="science-score" min="0" max="100" required>
-                    <button type="submit">Submit</button>
-                </form>
-                <div id="science-result" class="result"></div>
-            </div>
         </div>
+
     </div>
     <script src="script.js"></script>
 </body>

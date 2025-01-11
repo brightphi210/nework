@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Career Compass - Your Course Checking Platform</title>
+    <title>Contact Us - Career Compass</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Spicy+Rice&display=swap" rel="stylesheet">
@@ -56,7 +56,7 @@
             gap: 10px;
         }
 
-        .logo img{
+        .logo img {
             width: 70px;
         }
 
@@ -76,79 +76,36 @@
             color: #3498db;
         }
 
-        /* Hero Section */
-        .hero {
-            background-color: #f0f8ff;
-            padding: 8rem 0 4rem;
+        /* Contact Section */
+        .contact {
+            padding: 10rem 0 4rem;
             text-align: center;
         }
 
-        .hero h1 {
+        .contact h1 {
             font-size: 2.5rem;
             margin-bottom: 1rem;
             color: #2c3e50;
         }
 
-        .hero p {
+        .contact p {
             font-size: 1.2rem;
             color: #7f8c8d;
             margin-bottom: 2rem;
         }
 
-        .cta-button {
-            display: inline-block;
-            background-color: #3498db;
-            color: #ffffff;
-            padding: 0.8rem 1.5rem;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
+        .contact-info {
+            margin: 2rem 0;
         }
 
-        .cta-button:hover {
-            background-color: #2980b9;
-        }
-
-        /* Features Section */
-        .features {
-            padding: 4rem 0;
-            background-color: #ffffff;
-        }
-
-        .features h2 {
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 2rem;
-            color: #2c3e50;
-        }
-
-        .feature-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-        }
-
-        .feature-card {
-            background-color: #f9f9f9;
-            border-radius: 8px;
-            padding: 1.5rem;
-            text-align: center;
-            transition: transform 0.3s ease;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .feature-card h3 {
-            font-size: 1.2rem;
+        .contact-info h2 {
+            font-size: 1.8rem;
             margin-bottom: 0.5rem;
             color: #2c3e50;
         }
 
-        .feature-card p {
-            font-size: 0.9rem;
+        .contact-info p {
+            font-size: 1.2rem;
             color: #7f8c8d;
         }
 
@@ -177,16 +134,12 @@
                 display: none;
             }
 
-            .hero h1 {
+            .contact h1 {
                 font-size: 2rem;
             }
 
-            .hero p {
+            .contact p {
                 font-size: 1rem;
-            }
-
-            .feature-grid {
-                grid-template-columns: 1fr;
             }
 
             .logo {
@@ -200,7 +153,6 @@
             }
         }
     </style>
-
 </head>
 <body>
     <header>
@@ -218,50 +170,20 @@
     </header>
 
     <main>
-        <section class="hero">
+        <section class="contact">
             <div class="container">
-                <h1>Check your score and know your Strength</h1>
-                <p>Career Compass helps you check your score and suggest the Strength of your career</p>
-                <a href="check_course.html" class="cta-button">Check Your Score</a>
-
-            </div>
-        </section>
-
-        <section id="features" class="features">
-            <div class="container">
-                <h2>Our Features</h2>
-                <div class="feature-grid">
-                    <div class="feature-card">
-                        <h3>Instant Verification</h3>
-                        <p>Verify course certificates in seconds with our advanced authentication system.</p>
-                    </div>
-                    <div class="feature-card">
-                        <h3>Global Database</h3>
-                        <p>Access a comprehensive database of educational institutions and courses worldwide.</p>
-                    </div>
-                    <div class="feature-card">
-                        <h3>Secure & Reliable</h3>
-                        <p>Trust in our secure platform, ensuring your data and verifications are protected.</p>
-                    </div>
-                    <div class="feature-card">
-                        <h3>Easy Integration</h3>
-                        <p>Seamlessly integrate our API into your existing systems for efficient verification processes.</p>
-                    </div>
+                <h1>Contact Us</h1>
+                <p>We'd love to hear from you! Reach out to us through the following:</p>
+                <div class="contact-info">
+                    <h2>Phone</h2>
+                    <p>+2349115325001</p>
+                </div>
+                <div class="contact-info">
+                    <h2>Email</h2>
+                    <p><a href="mailto:Okabiedean@gmail.com">Okabiedean@gmail.com</a></p>
                 </div>
             </div>
         </section>
     </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 CourseCheck. All rights reserved.</p>
-            <div class="social-links">
-                <a href="#" aria-label="Facebook">&#xf39e;</a>
-                <a href="#" aria-label="Twitter">&#xf099;</a>
-                <a href="#" aria-label="LinkedIn">&#xf0e1;</a>
-            </div>
-        </div>
-    </footer>
 </body>
 </html>
-

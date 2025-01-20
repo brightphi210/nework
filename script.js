@@ -25,7 +25,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const recommendation = scienceCourses[Math.floor(Math.random() * scienceCourses.length)];
             artResult.textContent = `Your score is below 50. We recommend trying a science course: ${recommendation}`;
         } else {
-            artResult.textContent = `Great job! Your score of ${score} shows strength in art subjects.`;
+            const artCourses = ['Fine Arts', 'Law', 'Mass Communication', 'Theatre Arts', 'International Relations'];
+            const recommendation = artCourses[Math.floor(Math.random() * artCourses.length)];
+            artResult.textContent = `Great job! Your score of ${score} shows strength in art subjects. You could consider pursuing a university course like ${recommendation}.`;
         }
     });
 
@@ -38,8 +40,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const recommendation = artCourses[Math.floor(Math.random() * artCourses.length)];
             scienceResult.textContent = `Your score is below 50. We recommend trying an art course: ${recommendation}`;
         } else {
-            scienceResult.textContent = `Great job! Your score of ${score} shows strength in science subjects.`;
+            const scienceCourses = ['Engineering', 'Medicine', 'Pharmacy', 'Computer Science', 'Biotechnology'];
+            const recommendation = scienceCourses[Math.floor(Math.random() * scienceCourses.length)];
+            scienceResult.textContent = `Great job! Your score of ${score} shows strength in science subjects. You could consider pursuing a university course like ${recommendation}.`;
         }
     });
 });
-
